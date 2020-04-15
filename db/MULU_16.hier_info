@@ -1,0 +1,164 @@
+|main
+a <= seven_segment_digit_interface:inst2.a
+b <= seven_segment_digit_interface:inst2.b
+c <= seven_segment_digit_interface:inst2.c
+d <= seven_segment_digit_interface:inst2.d
+e <= seven_segment_digit_interface:inst2.e
+f <= seven_segment_digit_interface:inst2.f
+g <= seven_segment_digit_interface:inst2.g
+dp <= seven_segment_digit_interface:inst2.dp
+
+
+|main|seven_segment_digit_interface:inst2
+x3 => Mux0.IN33
+x3 => Mux1.IN33
+x3 => Mux2.IN33
+x3 => Mux3.IN33
+x3 => Mux4.IN33
+x3 => Mux5.IN33
+x3 => Mux6.IN33
+x2 => Mux0.IN34
+x2 => Mux1.IN34
+x2 => Mux2.IN34
+x2 => Mux3.IN34
+x2 => Mux4.IN34
+x2 => Mux5.IN34
+x2 => Mux6.IN34
+x1 => Mux0.IN35
+x1 => Mux1.IN35
+x1 => Mux2.IN35
+x1 => Mux3.IN35
+x1 => Mux4.IN35
+x1 => Mux5.IN35
+x1 => Mux6.IN35
+x0 => Mux0.IN36
+x0 => Mux1.IN36
+x0 => Mux2.IN36
+x0 => Mux3.IN36
+x0 => Mux4.IN36
+x0 => Mux5.IN36
+x0 => Mux6.IN36
+dot => dp.IN0
+en => Mux0.IN32
+en => Mux1.IN32
+en => Mux2.IN32
+en => Mux3.IN32
+en => Mux4.IN32
+en => Mux5.IN32
+en => Mux6.IN32
+en => dp.IN1
+a <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+b <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+c <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+d <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+e <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+f <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+g <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+dp <= dp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|unsigned_mult:inst
+out[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[8] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[9] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[10] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[11] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[12] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[13] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[14] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[15] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[16] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[17] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[18] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[19] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[20] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[21] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[22] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[23] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[24] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[25] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[26] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[27] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[28] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[29] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[30] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[31] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => Mult0.IN15
+a[1] => Mult0.IN14
+a[2] => Mult0.IN13
+a[3] => Mult0.IN12
+a[4] => Mult0.IN11
+a[5] => Mult0.IN10
+a[6] => Mult0.IN9
+a[7] => Mult0.IN8
+a[8] => Mult0.IN7
+a[9] => Mult0.IN6
+a[10] => Mult0.IN5
+a[11] => Mult0.IN4
+a[12] => Mult0.IN3
+a[13] => Mult0.IN2
+a[14] => Mult0.IN1
+a[15] => Mult0.IN0
+b[0] => Mult0.IN31
+b[1] => Mult0.IN30
+b[2] => Mult0.IN29
+b[3] => Mult0.IN28
+b[4] => Mult0.IN27
+b[5] => Mult0.IN26
+b[6] => Mult0.IN25
+b[7] => Mult0.IN24
+b[8] => Mult0.IN23
+b[9] => Mult0.IN22
+b[10] => Mult0.IN21
+b[11] => Mult0.IN20
+b[12] => Mult0.IN19
+b[13] => Mult0.IN18
+b[14] => Mult0.IN17
+b[15] => Mult0.IN16
+
+
+|main|CONSTX:inst1
+data[0] <= <GND>
+data[1] <= <VCC>
+data[2] <= <VCC>
+data[3] <= <GND>
+data[4] <= <GND>
+data[5] <= <GND>
+data[6] <= <GND>
+data[7] <= <GND>
+data[8] <= <GND>
+data[9] <= <GND>
+data[10] <= <GND>
+data[11] <= <GND>
+data[12] <= <GND>
+data[13] <= <GND>
+data[14] <= <GND>
+data[15] <= <GND>
+
+
+|main|CONSTX:inst2ddd
+data[0] <= <GND>
+data[1] <= <VCC>
+data[2] <= <GND>
+data[3] <= <GND>
+data[4] <= <GND>
+data[5] <= <GND>
+data[6] <= <GND>
+data[7] <= <GND>
+data[8] <= <GND>
+data[9] <= <GND>
+data[10] <= <GND>
+data[11] <= <GND>
+data[12] <= <GND>
+data[13] <= <GND>
+data[14] <= <GND>
+data[15] <= <GND>
+
+
